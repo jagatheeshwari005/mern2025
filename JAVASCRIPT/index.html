@@ -2,35 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width= initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <h1 id="header">hello</h1>
+    <h1 id="header">Hello!...</h1>
     <button onclick="buttonClicked()">change text</button>
-    <button onclick="changecolor()" >change color</button> 
+    <button onclick="changeColor()">change color</button>
     <input type="text" id="name">
-        <button onclick="addName()">add</button>
-        <ul id="list"></ul>
-        <script>
-            var addName=()=>{
-                var value=document.getElementById("name").value;
-                var li=document.createElement("li");
-                li.innerText=value;
-                document.getElementById("list").append(li)
-            }
-
-   var buttonClicked=()=>{
-            var head=document.getElementById("header");
-
-            head.innerHTML=head.innerHTML==="hello kec"?"jaga":"jagatheesh"
-            
+    <button onclick="addName()">add</button>
+    <ul id="list"></ul>
+    <script>
+        var addName=()=>{
+            var value=document.getElementById("name").value;
+            var li=document.createElement("li");
+            li.innerText=value;
+            document.getElementById("list").append(li)
         }
-var changecolor=()=>{
-    var data=document.getElementById("header")
-    data.style.color="red";
-  data.style.fontSize="20px"
- }
+        var buttonClicked=()=>{
+            var head=document.getElementById("header");
+            head.innerHTML=head.innerHTML==="Hello"?"Everyone!":"I am jaga"
+        }
+        var changeColor=()=>{
+            var data=document.getElementById("header");
+            data.style.color="yellow";
+            data.style.fontSize="39px";
+        }
     </script>
 </body>
 </html>
