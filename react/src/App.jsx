@@ -1,17 +1,17 @@
 
-import React from 'react';
-// import Login from './component/Login';
-import Counter from './component/Counter'
-function App() {
-  return (
-    <div>
-      <Counter/>
-      {/* <Login /> */}
-    </div>
-  );
-}
+// import React from 'react';
+// // import Login from './component/Login';
 
-export default App;
+// function App() {
+//   return (
+//     <div>
+//       <Counter/>
+//       {/* <Login /> */}
+//     </div>
+//   );
+// }
+
+// export default App;
 
 // import React from 'react'
 // import Child from './component/Child'
@@ -39,3 +39,43 @@ export default App;
 // }
 
 // export default App
+
+import React from 'react'
+import Child from './component/Child'
+import Login from './component/Login'
+ import Counter from './component/Counter'
+import Home from './page/Home'
+import About from './page/About'
+import Skills from './page/Skills'
+import Contact from './page/Contact'
+import Hooks from './page/Hooks'
+import Navbar from './component/Navbar'
+import {Routes,Route} from 'react-router-dom'
+import State from './Hooks/State'
+import Effect from './Hooks/Effect'
+import Effect2  from './Hooks/Effect2'
+
+const App = () => {
+  var fruits=["Apple","banana","grapes"];
+ var users={username:"jaga",password:"1234"}
+  return (
+    <div>
+      <Navbar />
+    <Routes>
+<Route path ='/' element= {<Home items={fruits} users={users}/>}/>
+<Route path ='/about' element={<About/>}/>
+<Route path ='/contact' element={<Contact/>}/>
+<Route path ='/Skills' element={<Skills/>}/>
+<Route path ='/Child' element={<Child/>}/>
+<Route path ='/Login' element={<Login/>}/>
+<Route path ='/Counter' element={<Counter/>}/>
+<Route path ='/hooks' element={<Hooks/>}/>
+<Route path ='/state' element={<State/>}/>
+<Route path ='/effect' element={<Effect/>}/>
+<Route path ='/effect2' element={<Effect2/>}/>
+    </Routes>
+      </div>
+  )
+}
+
+export default App

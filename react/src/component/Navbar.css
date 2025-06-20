@@ -1,0 +1,21 @@
+.navbar{
+    display: flex;
+    background-color:black;
+    padding: 10px;
+    
+    justify-content: right;
+
+}
+.Link{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    background-color: aqua;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.Link:hover{
+    background-color: darkolivegreen;
+    color: white;
+}
