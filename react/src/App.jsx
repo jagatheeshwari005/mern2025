@@ -54,6 +54,10 @@ import {Routes,Route} from 'react-router-dom'
 import State from './Hooks/State'
 import Effect from './Hooks/Effect'
 import Effect2  from './Hooks/Effect2'
+import Ref from './Hooks/Ref'
+import Reducer from './Hooks/Reducer'
+import Context from './Hooks/Context'
+
 
 const App = () => {
   var fruits=["Apple","banana","grapes"];
@@ -73,6 +77,11 @@ const App = () => {
 <Route path ='/state' element={<State/>}/>
 <Route path ='/effect' element={<Effect/>}/>
 <Route path ='/effect2' element={<Effect2/>}/>
+<Route path ='/ref' element={<Ref/>}/>
+<Route path='/reducer' element={<Reducer/>}/>
+<Route path='/context' element ={<Context/>}/>
+
+
     </Routes>
       </div>
   )

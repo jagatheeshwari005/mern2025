@@ -1,14 +1,12 @@
 import React from 'react'
-
+import About from './About'
+import image from '../assets/image.jpg'
 const Home = ({items,users}) => {
   return (
 
     <div>
-      <ul>
-        {items.map((fruits)=>(<li>{fruits}</li>))}
-      </ul>
-      <h1>{users.username}</h1>
-      <h1>{users.password}</h1>
+     <About items={items} users={users}/>
+     <img src={image} alt="react"/>
     </div>
   )
 }
