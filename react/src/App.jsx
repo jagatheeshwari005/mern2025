@@ -57,6 +57,7 @@ import Effect2  from './Hooks/Effect2'
 import Ref from './Hooks/Ref'
 import Reducer from './Hooks/Reducer'
 import Context from './Hooks/Context'
+import Todo from './component/Todo'
 
 
 const App = () => {
@@ -80,7 +81,7 @@ const App = () => {
 <Route path ='/ref' element={<Ref/>}/>
 <Route path='/reducer' element={<Reducer/>}/>
 <Route path='/context' element ={<Context/>}/>
-
+<Route path='/todo' element={<Todo/>}/>
 
     </Routes>
       </div>
